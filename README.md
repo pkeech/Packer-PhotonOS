@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/pkeech/Packer-PhotonOS">
-    <img src="https://github.com/pkeech/Packer-PhotonOS/blob/master/docs/images/logo.png" alt="Logo" />
+    <img src="https://github.com/pkeech/Packer-PhotonOS/blob/master/docs/logo.png" alt="Logo" />
   </a>
 
   <p align="center">
