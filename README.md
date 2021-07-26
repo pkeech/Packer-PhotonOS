@@ -15,8 +15,22 @@
 ### About
 The repo contains a basic [HashiCorp Packer](https://www.packer.io/) scripts to generate a customized [PhotonOS OVA](https://vmware.github.io/photon/)
 
+### Repository Structure
+The directories contained within this repository are outlined in the table below with a brief description to their roles.
+
+| Directory | Description |
+| :---: | --- |
+| `http` | Is the Packer HTTP boot directory |
+| `ova` | Contains all the Packer files to generate the image |
+| `ova/scripts` | Contains all the scripts utilized after the image has been created |
+
 ### Usage
 *Placeholder*
+
+``` bash
+packer init ova
+packer build --var-file=auto.pkrvars.hcl ova
+```
 
 ### Version Updates
 The table below briefly describes each update. For more information, view the releases page.

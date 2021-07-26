@@ -5,3 +5,7 @@
 docs/logo.afphoto
 
 ## INGORE SENSITIVE FILES
+auto.pkrvars.hcl
+
+## IGNORE PACKER CACHE
+packer_cache/

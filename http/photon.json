@@ -1,0 +1,22 @@
+{
+    "hostname": "photon-template",
+    "password":
+      {
+        "crypted": false,
+        "text": "changeme"
+      },
+    "disk": "/dev/sda",
+    "packagelist_file": "packages_minimal.json",
+    "additional_packages": ["vim"],
+    "postinstall": [
+      "#!/bin/sh",
+      "sed -i 's/PermitRootLogin no/PermitRootLogin yes/g' /etc/ssh/sshd_config",
+      "systemctl restart sshd.service"
+    ],
+    "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDRF6oc8ZwxurLAGfYg1GKwM+tJhQwo1sR+hebT0BaZVrJfoltm/ebxfS9ofpqajYVaIwWLYiFuXB8HG18Y1tG2wiNNzRXB5UChXVi8/zUAT1wer93nfYk5d+NDQHKASIKy24IkelqcjrPpgjiuvMLdIk3Kf6ulZTOnZwTeYm3iowyHyhGkkSkDrMqeJJv44O/TIdVuBilU0cHTD02NDx8WtGtustYfWLXPL3AG2vxZOb3j+cv58euna1xGBfPxmrbzmSMZrSiZ8NVutJKbIKQ5YDMzB/fsLKRkVwdYgWlqXa4FfgYc7CBWkVagFzyXCSJekI5hmvgxjaJvLeCNGzfMOxOQpvlWsTt/N1mE0yMqUfPgzMXMQsX53KUQOkSXWAldUaR0bwTmOnVI8G/UWINsfBiu9e3V71CQxYQncFAHOUgFT5bEQokPxxqLOxtVMpWnX3/glAzuAEbb1Q2UIpn36L4uyMvoVGPnvDh9PI95dRh7axGg885NZqMSgq5ZSi8= pete@Peters-iMac",
+    "install_linux_esx": true,
+    "network": {
+      "type": "dhcp"
+    }    
+  }
+  
