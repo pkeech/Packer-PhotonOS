@@ -1,0 +1,7 @@
+## IGNORE VSCODE FILES
+.vscode/
+
+## IGNORE AFFINITY FILES
+docs/logo.afphoto
+
+## INGORE SENSITIVE FILES
